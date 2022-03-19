@@ -3,7 +3,7 @@
 #pragma warning disable CS8618
     [Key]
     public int Id { get; set; }
-    public string Name { get; set; }
+    public string Title { get; set; }
     [StringLength(320)]
     public string Description { get; set; }
     public Person Person { get; set; }

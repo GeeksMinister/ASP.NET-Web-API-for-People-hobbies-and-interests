@@ -2,4 +2,4 @@
 
 SetWindowSize(150, 45);
 
-//Database.PrintMenu();
+Database.PrintMenu();
