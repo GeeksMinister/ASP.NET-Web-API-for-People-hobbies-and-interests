@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labb4_API.Database", "Labb4_API.Database\Labb4_API.Database.csproj", "{219752AD-C500-4491-A186-071CFC77A157}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Labb4_API.Database", "Labb4_API.Database\Labb4_API.Database.csproj", "{219752AD-C500-4491-A186-071CFC77A157}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labb4_API.API", "Labb4_API.API\Labb4_API.API.csproj", "{81D75356-3D02-4EA2-8E41-6DEFDBB08778}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{219752AD-C500-4491-A186-071CFC77A157}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{219752AD-C500-4491-A186-071CFC77A157}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{219752AD-C500-4491-A186-071CFC77A157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81D75356-3D02-4EA2-8E41-6DEFDBB08778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D75356-3D02-4EA2-8E41-6DEFDBB08778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D75356-3D02-4EA2-8E41-6DEFDBB08778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D75356-3D02-4EA2-8E41-6DEFDBB08778}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -14,4 +14,8 @@
         return result.Entity;
     }
 
+    public int CountEntities()
+    {
+        return (from id in _context.Interests select id).Count();
+    }
 }

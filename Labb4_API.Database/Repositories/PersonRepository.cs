@@ -13,5 +13,10 @@
         await _context.SaveChangesAsync();
         return result.Entity;
     }
-    
+
+    public int CountEntities()
+    {
+        return (from id in _context.Persons select id).Count();
+    }
+
 }

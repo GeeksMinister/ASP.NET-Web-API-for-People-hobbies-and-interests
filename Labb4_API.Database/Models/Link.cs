@@ -8,4 +8,6 @@
     public Person Person { get; set; }
     public int InterestId { get; set; }
     public Interest Interest { get; set; }
+
+    public Link() { }
 }

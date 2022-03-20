@@ -117,7 +117,6 @@ using System.Data;
         {
             try
             {
-                using PersonDbContext context = new PersonDbContext();
                 Person person = new Person()
                 {
                     FirstName = firstName,
@@ -135,11 +134,10 @@ using System.Data;
             }
         }
 
-        private (int personIdCount, int interestIdCount) GetAvailablePersonId()
+        private (int , int) GetAvailablePersonId()
         {
-            using PersonDbContext context = new PersonDbContext();
-            int countPersonId = (from id in context.Persons select id).Count();
-            int countInterestId = (from id in context.Interests select id).Count();
+            int countPersonId =  _personRepo.CountEntities();
+            int countInterestId =  _interestRepo.CountEntities() ;
             return (countPersonId, countInterestId);
         }
 
@@ -177,7 +175,6 @@ using System.Data;
         {
             try
             {
-                using PersonDbContext context = new PersonDbContext();
                 Interest interest = new Interest()
                 {
                     Title = title,
@@ -227,7 +224,6 @@ using System.Data;
         {
             try
             {
-                using PersonDbContext context = new PersonDbContext();
                 Link interest = new Link()
                 {
                     Url = url,

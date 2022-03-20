@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 public class Program
 {
@@ -16,9 +15,14 @@ public class Program
 
     static IHostBuilder CreatehostBuilder(string[] args)
     {
+        var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
         return Host.CreateDefaultBuilder(args)
             .ConfigureServices(services =>
             {
+                services.AddDbContextPool<PersonDbContext>(options =>
+                {
+                    options.UseSqlServer(configuration["ConnectionStrings:DefaultConnection"]);
+                });
                 services.AddTransient<Program>();
                 services.AddTransient<Database>();
                 services.AddTransient<PersonDbContext>();
@@ -28,7 +32,6 @@ public class Program
             });
     }
     void Run() => database.PrintMenu();
-    
 }
 
 
