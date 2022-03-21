@@ -261,4 +261,37 @@ https://localhost:7098/api/Labb4_API_/GetAllInfoForPerson?personId=9
   ]
 }
 ```
-
+### 7- [Get] people from a name search 
+https://localhost:7098/api/Labb4_API_/SearchForPerson?search=ar
+```
+[
+  {
+    "id": 1,
+    "firstName": "Martelle",
+    "lastName": "Woodyer",
+    "age": 29,
+    "phone": "+30 728 979 6883",
+    "city": "Kompóti",
+    "email": "mwoodyer0@bing.com"
+  },
+  {
+    "id": 7,
+    "firstName": "Simeon",
+    "lastName": "Marquot",
+    "age": 50,
+    "phone": "+55 136 758 8081",
+    "city": "Taboão da Serra",
+    "email": "smarquot6@baidu.com"
+  },
+  {
+    "id": 8,
+    "firstName": "Garold",
+    "lastName": "Lichtfoth",
+    "age": 34,
+    "phone": "+48 544 283 7852",
+    "city": "Wola Uhruska",
+    "email": "glichtfoth7@facebook.com"
+  }
+]
+```
+### 8-
