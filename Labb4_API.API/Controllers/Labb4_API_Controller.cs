@@ -170,7 +170,7 @@ public class Labb4_API_Controller : ControllerBase
     }
 
     [HttpGet("Paging")]
-    public async Task<IActionResult> RequestPeopleObject([FromBody] Objectparameters peopleParameters)
+    public async Task<IActionResult> RequestPeopleObject([FromQuery] Objectparameters peopleParameters)
     {
         try
         {
