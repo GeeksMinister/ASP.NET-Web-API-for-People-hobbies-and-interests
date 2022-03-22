@@ -194,4 +194,104 @@ https://localhost:7098/api/Labb4_API_/AddLink
     "interestId": 10
 }
 ```
-
+### 6- [Get] all the interests and all links for that person directly in a hierarchical JSON file 
+https://localhost:7098/api/Labb4_API_/GetAllInfoForPerson?personId=9
+```
+{
+  "id": 9,
+  "firstName": "Malory",
+  "lastName": "Odney",
+  "age": 34,
+  "phone": "+46 697 444 1016",
+  "city": "Gislaved",
+  "email": "modney8@alibaba.com",
+  "interests": [
+    {
+      "id": 17,
+      "title": "Environmental Specialist",
+      "description": "Release Left Internal Mammary Lymphatic, Open Approach",
+      "personId": 9,
+      "links": [
+        {
+          "id": 49,
+          "url": "http://bloomberg.com/vulputate/elementum/nullam/varius/nulla.json",
+          "personId": 9,
+          "interestId": 17
+        },
+        {
+          "id": 50,
+          "url": "https://bigcartel.com/lectus/in/est.json",
+          "personId": 9,
+          "interestId": 17
+        },
+        {
+          "id": 51,
+          "url": "http://theglobeandmail.com/non/quam/nec/dui.js",
+          "personId": 9,
+          "interestId": 17
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Senior Financial Analyst",
+      "description": "Destruction of Thoracic Sympathetic Nerve, Perc Approach",
+      "personId": 9,
+      "links": [
+        {
+          "id": 52,
+          "url": "http://washingtonpost.com/quis/orci/nullam/molestie/nibh.aspx",
+          "personId": 9,
+          "interestId": 18
+        },
+        {
+          "id": 53,
+          "url": "https://vk.com/eget/elit/sodales/scelerisque.js",
+          "personId": 9,
+          "interestId": 18
+        },
+        {
+          "id": 54,
+          "url": "https://quantcast.com/odio/odio/elementum/eu/interdum.png",
+          "personId": 9,
+          "interestId": 18
+        }
+      ]
+    }
+  ]
+}
+```
+### 7- [Get] people from a name search 
+https://localhost:7098/api/Labb4_API_/SearchForPerson?search=ar
+```
+[
+  {
+    "id": 1,
+    "firstName": "Martelle",
+    "lastName": "Woodyer",
+    "age": 29,
+    "phone": "+30 728 979 6883",
+    "city": "Kompóti",
+    "email": "mwoodyer0@bing.com"
+  },
+  {
+    "id": 7,
+    "firstName": "Simeon",
+    "lastName": "Marquot",
+    "age": 50,
+    "phone": "+55 136 758 8081",
+    "city": "Taboão da Serra",
+    "email": "smarquot6@baidu.com"
+  },
+  {
+    "id": 8,
+    "firstName": "Garold",
+    "lastName": "Lichtfoth",
+    "age": 34,
+    "phone": "+48 544 283 7852",
+    "city": "Wola Uhruska",
+    "email": "glichtfoth7@facebook.com"
+  }
+]
+```
+### 8-
