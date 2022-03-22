@@ -12,10 +12,10 @@ public class Person
     public string? Phone { get; set; }
     public string City { get; set; }
     public string? Email { get; set; }
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public IEnumerable<Interest> Interests { get; set; }
     [JsonIgnore(Condition = JsonIgnoreCondition.Always)]
-    public List<Interest> Interests { get; set; }
-    [JsonIgnore(Condition = JsonIgnoreCondition.Always)]
-    public List<Link> Links { get; set; }
+    public IEnumerable<Link> Links { get; set; }
 
     public Person() { }
 }

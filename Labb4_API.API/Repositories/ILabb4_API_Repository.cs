@@ -1,11 +1,14 @@
-﻿public interface ILabb4_API_Repository
+﻿public interface ILabb4_API_Repository<T, U, V>
 {
-    Task<IEnumerable< Person>> GetAllPeople();
-    Task<Person> GetPerson(int personId);
+    Task<IEnumerable<T>> GetAllPeople();
+    Task<T> GetPerson(int personId);
     Task<bool> CheckPersonExists(int personId);
-    Task<IEnumerable<Interest>> GetAllRelatedInterests(int personId);
-    Task<IEnumerable<Link>> GetAllRelatedLinks(int personId);
-    Task<Interest> CreateNewInterest(Interest interestDto);
-    Task<Link> CreateNewLink(Link linkDto);
-
+    Task<IEnumerable<U>> GetAllRelatedInterests(int personId);
+    Task<IEnumerable<V>> GetAllRelatedLinks(int personId);
+    Task<U> CreateNewInterest(U interestDto);
+    Task<V> CreateNewLink(V linkDto);
+    Task<T> GetAllInfoByPersonId(int personId);
+    Task<IEnumerable<T>> SearchForPerson(string search);
+    Task<IEnumerable<T>> GetPeople(Objectparameters ownerParameters);
+    Task<PagedList<T>> GetPeopleEnhanced(Objectparameters ownerParameters);
 }
