@@ -294,4 +294,55 @@ https://localhost:7098/api/Labb4_API_/SearchForPerson?search=ar
   }
 ]
 ```
-### 8-
+### 8- [Get] people wtih pagination
+https://localhost:7098/api/Labb4_API_/Paging?PageNumber=2&PageSize=5
+```
+[
+  {
+    "id": 6,
+    "firstName": "Britt",
+    "lastName": "Hassell",
+    "age": 31,
+    "phone": "+964 389 401 8494",
+    "city": "Ad Diwaniyah",
+    "email": "bhassell5@ted.com"
+  },
+  {
+    "id": 7,
+    "firstName": "Simeon",
+    "lastName": "Marquot",
+    "age": 50,
+    "phone": "+55 136 758 8081",
+    "city": "Taboão da Serra",
+    "email": "smarquot6@baidu.com"
+  },
+  {
+    "id": 8,
+    "firstName": "Garold",
+    "lastName": "Lichtfoth",
+    "age": 34,
+    "phone": "+48 544 283 7852",
+    "city": "Wola Uhruska",
+    "email": "glichtfoth7@facebook.com"
+  },
+  {
+    "id": 9,
+    "firstName": "Malory",
+    "lastName": "Odney",
+    "age": 34,
+    "phone": "+46 697 444 1016",
+    "city": "Gislaved",
+    "email": "modney8@alibaba.com"
+  },
+  {
+    "id": 10,
+    "firstName": "Paulie",
+    "lastName": "Braybrooke",
+    "age": 35,
+    "phone": "+63 803 900 0554",
+    "city": "Sinacaban",
+    "email": "pbraybrooke9@paginegialle.it"
+  }
+]
+```
+
