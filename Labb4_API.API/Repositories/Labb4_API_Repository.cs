@@ -53,13 +53,8 @@
     public async Task<Person> GetAllInfoByPersonId(int personId)
     {
 
-        var person = _context.Persons.FirstOrDefault(p => p.Id == personId);
-        var interest = await (from _interests in _context.Interests
-                              where _interests.PersonId == personId
-                              select _interests).ToListAsync();
-        var links = await (from _links in _context.Links
-                           where _links.PersonId == personId
-                           select _links).ToListAsync();
+        var person = await _context.Persons.Include(p => p.Interests).ThenInclude(i => i.Links).
+            FirstOrDefaultAsync(p => p.Id == personId);
         return person;
     }
 
